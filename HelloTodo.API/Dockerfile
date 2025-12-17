@@ -21,6 +21,7 @@ RUN apt-get update \
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["HelloTodo.API/HelloTodo.API.csproj", "HelloTodo.API/"]
+COPY ["HelloToDo.ServiceDefaults/HelloToDo.ServiceDefaults.csproj", "HelloToDo.ServiceDefaults/"]
 RUN dotnet restore "./HelloTodo.API/HelloTodo.API.csproj"
 COPY . .
 WORKDIR "/src/HelloTodo.API"
