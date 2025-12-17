@@ -20,12 +20,8 @@ RUN apt-get update \
     clang zlib1g-dev
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-<<<<<<< HEAD
 COPY ["HelloTodo.API/HelloTodo.API.csproj", "HelloTodo.API/"]
 COPY ["HelloToDo.ServiceDefaults/HelloToDo.ServiceDefaults.csproj", "HelloToDo.ServiceDefaults/"]
-=======
-COPY ["./HelloTodo.API/HelloTodo.API.csproj", "HelloTodo.API/"]
->>>>>>> 83f59eaee56c1f7329a60c5c30e7691c0ff96f93
 RUN dotnet restore "./HelloTodo.API/HelloTodo.API.csproj"
 COPY . .
 WORKDIR "/src/HelloTodo.API"
