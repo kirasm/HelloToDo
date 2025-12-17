@@ -1,0 +1,4 @@
+﻿namespace HelloTodo.API.Entities
+{
+    public record Todo(int Id, string? Title, DateOnly? DueBy = null, bool IsComplete = false);
+}

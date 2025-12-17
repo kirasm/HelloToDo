@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="HelloTodo.API/HelloTodo.API.csproj" />
+  <Project Path="HelloToDo.AppHost/HelloToDo.AppHost.csproj" />
+  <Project Path="HelloToDo.ServiceDefaults/HelloToDo.ServiceDefaults.csproj" />
+</Solution>
